@@ -7,8 +7,8 @@ fn main() {
     match Triangle::new(a, b, c) {
         Ok(t) => {
             println!("Triangle: {:?}", t);
-            println!("Perimeter: {}", t.perimeter());
-            println!("Area: {}", t.area());
+            println!("Perimeter: {:.4}", t.perimeter());
+            println!("Area: {:.4}", t.area());
         }
         Err(e) => println!("Error: {}", e),
     }
